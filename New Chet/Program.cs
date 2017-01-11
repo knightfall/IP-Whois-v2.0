@@ -41,7 +41,7 @@ namespace New_Chet
             list = (from DataRow dr in table.Rows
 
                     select new ipdata(dr["lastAddress"].ToString())
-                  //  select new ipdata()
+                  
                     {
                         playerId = Convert.ToInt32(dr["playerId"].ToString()),
                         uniqueid = steam64id(Convert.ToString(dr["uniqueId"])),
@@ -61,7 +61,7 @@ namespace New_Chet
             }
 
 
-          //  string l = "10";
+     
             
         }
 
@@ -83,7 +83,7 @@ namespace New_Chet
 
             }
             return ew;
-            // return string;
+            
         }
 
        public struct ipinfo
